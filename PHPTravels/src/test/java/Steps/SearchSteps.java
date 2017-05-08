@@ -29,7 +29,6 @@ public class SearchSteps extends BaseUtil
     public void navigateToURLHttpWwwPhptravelsNet() throws Throwable
     {
         System.out.println("Navigate to URL 'http://www.phptravels.net/'");
-
         base.driver.navigate().to("http://www.phptravels.net/");
 
     }

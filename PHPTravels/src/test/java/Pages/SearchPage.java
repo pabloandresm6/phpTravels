@@ -46,7 +46,6 @@ public class SearchPage
     public SearchPage(WebDriver driver)
     {
         PageFactory.initElements(driver,this);
-
         wdriver = driver;
 
     }
@@ -150,7 +149,6 @@ public class SearchPage
                     WebElement select = wdriver.findElement(By.xpath("//div[@class='form-horizontal ageselect']/div[1]/select"));
                     select.sendKeys("0");
                     count++;
-
                 }
                 else
                 {
@@ -159,7 +157,6 @@ public class SearchPage
                     WebElement select = wdriver.findElement(By.xpath("//div[@class='form-horizontal ageselect']/div[" +count+ "]/select"));
                     select.sendKeys(age);
                     count++;
-
                 }
             }
 
@@ -176,7 +173,7 @@ public class SearchPage
         {
             wdriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
             btnDone.findElement(By.xpath("//button[@type = 'button' and text()='Done']"));
-             btnDone.click();
+            btnDone.click();
         }
         catch(Exception e)
         {
