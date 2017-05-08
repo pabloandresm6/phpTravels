@@ -3,7 +3,7 @@ Feature: SearchFeature
 
   @TC_1
   Scenario Outline:Check response searching valid data
-    Given Navigate to URL 'http://www.phptravels.net/'
+    Given I Navigate to URL 'http://www.phptravels.net/'
     And Enter a valid location as <location>
     And Enter a valid check in date as <check in date>
     And Enter a valid check out date as <check out date>
@@ -27,7 +27,7 @@ Feature: SearchFeature
 
   @TC_2
   Scenario Outline:Check response searching with empty location
-    Given Navigate to URL 'http://www.phptravels.net/'
+    Given I Navigate to URL 'http://www.phptravels.net/'
     And skip the location field
     And Enter a valid check in date as <check in date>
     And Enter a valid check out date as <check out date>
@@ -47,7 +47,7 @@ Feature: SearchFeature
 
   @TC_3
   Scenario Outline:Check response searching with no filters.
-    Given Navigate to URL 'http://www.phptravels.net/'
+    Given I Navigate to URL 'http://www.phptravels.net/'
     And Enter a valid location as <location>
     And Enter a valid check in date as <check in date>
     And Enter a valid check out date as <check out date>
@@ -68,7 +68,7 @@ Feature: SearchFeature
 
   @TC_4
   Scenario Outline:Check response selecting a age child
-    Given Navigate to URL 'http://www.phptravels.net/'
+    Given I Navigate to URL 'http://www.phptravels.net/'
     And Enter a valid location as <location>
     And Enter a valid check in date as <check in date>
     And Enter a valid check out date as <check out date>
@@ -93,7 +93,7 @@ Feature: SearchFeature
 
   @TC_5
   Scenario Outline:Checking the response when the location is wrong
-    Given Navigate to URL 'http://www.phptravels.net/'
+    Given I Navigate to URL 'http://www.phptravels.net/'
     And Enter a invalid location as <location>
     And Enter a valid check in date as <check in date>
     And Enter a valid check out date as <check out date>

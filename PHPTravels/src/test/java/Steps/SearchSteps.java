@@ -25,7 +25,7 @@ public class SearchSteps extends BaseUtil
         this.base = base;
     }
 
-    @Given("^Navigate to URL 'http://www.phptravels.net/'$")
+    @Given("^I Navigate to URL 'http://www.phptravels.net/'$")
     public void navigateToURLHttpWwwPhptravelsNet() throws Throwable
     {
         System.out.println("Navigate to URL 'http://www.phptravels.net/'");
